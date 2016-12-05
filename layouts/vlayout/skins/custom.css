@@ -1,0 +1,441 @@
+@font-face {
+    font-family: "BYekan";
+    src: url("fonts/BYekan.eot?#") format("eot"), url("fonts/BYekan.woff") format("woff"), url("fonts/BYekan.ttf") format("truetype");
+}
+body {
+    font-family: "Tahoma2","Tahoma",Verdana,Open Sans,Arial,sans-serif !important;
+} 
+.login-container,
+.bodyContents,
+.gridster,
+small,.widgetChartContainer,footer,.vtFooter p{
+    font-family:'BYekan'; 
+}
+#headerLinks {
+    float: left !important;
+}
+.menuBar .span9 {
+    float: right;
+}
+.navbar .nav {
+    float: right;
+    margin-left: 0 !important;
+    margin-right: 10px !important;
+}
+.navbar .nav > li {
+    float: right;
+}
+.pull-right.headerLinksContainer {
+    float: left;
+}
+#headerLinks .headerLinksContainer > [class*="span"] {
+    float: right;
+}
+#headerLinks .headerLinksContainer .settingIcons ul.dropdown-menu {
+    left: auto;
+    right: -132px;
+}
+#headerLinks .headerLinksContainer .settingIcons ul.dropdown-menu:after, #headerLinks .headerLinksContainer .settingIcons ul.dropdown-menu:before {
+    left: 13px;
+    right: auto;
+}
+.themeMenuContainer {
+    left: auto !important;
+    right: -84px !important;
+}
+#headerLinks .headerLinksContainer ul.dropdown-menu:after, #headerLinks .headerLinksContainer ul.dropdown-menu:before {
+    left: 15px;
+    right: auto;
+}
+#page {
+    direction: rtl;
+}
+#headerLinks .headerLinksContainer ul.dropdown-menu {
+    left: 0;
+    right: auto;
+}
+.actionsContainer .span2 {
+    float: right;
+}
+.actionsContainer .span10 {
+    float: left;
+    margin-left: 0;
+    margin-right: 2%;
+}
+.commonActionsContainer .searchElement {
+    direction: ltr;
+    float: right;
+}
+.quickActions {
+    float: left !important;
+}
+.quickActions .pull-right {
+    float: left;
+    margin-left: 10px;
+    margin-right: 0;
+}
+.commonActionsContainer .dropdown-menu.dropdownStyles.commonActionsButtonDropDown {
+    left: auto !important;
+    right: -371px !important;
+}
+.navbar .nav.pull-right .dropdown-menu:before {
+    left: 12px;
+    right: auto;
+}
+.navbar .nav.pull-right .dropdown-menu:after {
+    left: 13px;
+    right: auto;
+}
+.commonActionsContainer .dropdown-menu.dropdownStyles.commonActionsButtonDropDown li.title {
+    padding: 5px 15px 0 0;
+}
+.chzn-container-single .chzn-single div {
+    left: 0;
+    right: auto;
+}
+.chzn-container-single .chzn-single span {
+    margin-left: 26px;
+    margin-right: 0;
+	font-size: 12px;
+}
+input, button, select, textarea {
+    direction: rtl;
+    font-family: tahoma;
+}
+.searchElement .select-search {
+    direction: rtl;
+}
+.chzn-container-single .chzn-single {
+    padding: 0 8px 0 0;
+}
+.input-append.searchBar {
+    direction: rtl;
+}
+#advanceSearchContainer .boxSizingBorderBox .span5 {
+    float: right;
+}
+#advanceSearchContainer .boxSizingBorderBox .span7 {
+    float: left;
+}
+#advanceSearchContainer {
+    direction: rtl;
+    text-align: right;
+}
+.cancelLink.pull-right {
+    float: left;
+}
+.widgetsList li {
+    text-align: right;
+}
+.close {
+    float: left;
+}
+.contentsBackground h3 {
+    text-align: right;
+}
+.nav-tabs > li, .nav-pills > li {
+    float: right;
+}
+.table th, .table td {
+    text-align: right;
+}
+.form-horizontal .control-label {
+    float: right;
+}
+.row-fluid > [class*="span"] {
+    float: right;
+    margin-left: 0;
+}
+.quickLinksDiv p.selectedQuickLink a:after {
+    border-left: 0 none;
+    border-right: 10px solid #4d4d4d;
+    left: auto;
+    right: 100%;
+}
+.quickLinksDiv p {
+    padding: 5% 11px 0 0;
+}
+.quickLinksDiv p.selectedQuickLink {
+    box-shadow: -4px 0 3px -4px #000000 inset;
+}
+.dashboardHeading .span3 {
+    float: left;
+}
+.quickWidgetContainer .quickWidget .quickWidgetHeader h5 {
+    float: right !important;
+    margin-left: 0;
+}
+.quickLinksDiv p {
+    font-size: 12px;
+}
+.toggleButton {
+    border-color: #dddddd -moz-use-text-color #dddddd #dddddd;
+    border-style: solid none solid solid;
+    border-width: 1px 0 1px 1px;
+    left: auto;
+    right: -1px;
+}
+.toggleButton .icon-chevron-left {
+    background-position: -455px -72px !important;
+}
+.toggleButton .icon-chevron-right {
+    background-position: -430px -72px !important;
+}
+.btn-group + .btn-group {
+    margin-left: 0;
+    margin-right: 5px;
+}
+.listViewActions.pull-right {
+    float: left;
+}
+.span4.btn-toolbar {
+    margin-left: 0;
+    margin-right: 1%;
+}
+.select2-container .select2-choice span {
+    margin-left: 26px;
+    margin-right: 0;
+    text-align: right;
+}
+.select2-container .select2-choice div {
+    left: 0;
+    right: auto;
+}
+.select2-container .select2-choice {
+    padding: 0 8px 0 0;
+}
+.select2-drop {
+    direction: rtl;
+}
+.select2-results ul.select2-result-sub > li .select2-result-label {
+    padding-left: 0;
+    padding-right: 10px;
+}
+.hide.pull-right.filterActionImgs {
+    float: left;
+    margin-left: 6px;
+}
+ul, ol {
+    margin: 0 9px 9px 0;
+}
+.select2-container-multi .select2-choices .select2-search-field input {
+    font-family: tahoma;
+}
+.radio input[type="radio"], .checkbox input[type="checkbox"] {
+    float: right;
+    margin-left: 0;
+    margin-right: -18px;
+}
+.radio, .checkbox {
+    padding-left: 0;
+    padding-right: 29px;
+}
+.select2-container-multi .select2-choices li {
+    float: right;
+}
+.select2-search-choice-close {
+    left: 0;
+    right: auto;
+}
+.select2-container-multi .select2-choices .select2-search-choice {
+    margin: 3px 5px 3px 0;
+}
+.chzn-container-single .chzn-single div {
+    border-left: 0 none;
+    border-right: 1px solid #aaaaaa;
+}
+.chzn-container .chzn-results li {
+}
+.contentHeader .pull-right {
+    float: left;
+}
+.commonActionsContainer .searchElement .searchBar .chzn-container-single .chzn-single div, .commonActionsContainer .searchElement .select-search .chzn-container-single .chzn-single div {
+    border-right: 0 none;
+}
+.listViewMassActions .dropdown-menu {
+    right: 0;
+}
+.listViewSetting.dropdown-menu {
+    left: 0;
+    right: -150px;
+}
+.span5.marginLeftZero.textOverflowEllipsis {
+    float: left;
+}
+#settingsShortCutsContainer .span3 {
+    float: left;
+}
+.btn-toolbar.pull-right {
+    float: left;
+}
+.detailViewInfo .details {
+    padding-left: 1.5%;
+    padding-right: 0;
+}
+.contentHeader h3.span8 {
+    float: right;
+}
+.detailViewInfo .details {
+    border-left: 4px solid #666666;
+    border-right: 0 none;
+}
+.summaryView .summaryViewEntries .fieldLabel {
+    padding: 5px 5% 5px 0;
+}
+.detailViewInfo .contents {
+    padding: 2.2% 2.2% 0 0;
+}
+.nav.nav-stacked.nav-pills {
+    margin: 0;
+}
+.nav.nav-stacked.nav-pills li {
+    float: none;
+}
+.blockUI, #globalmodal {
+}
+.globalSearchResults {
+    max-width: 100% !important;
+}
+.globalSearchResults .nav {
+    margin-right: 0;
+}
+.globalSearchResults .contents ul li a span {
+    float: left;
+}
+.globalSearchResults .contents ul li a {
+    text-align: right;
+}
+.globalSearchResults .span6 strong {
+    direction: rtl;
+    float: right;
+}
+.dashboardWidgetContent .span11 p.muted {
+    float: left;
+}
+.modal-body {
+    direction: rtl;
+}
+.box.pull-right {
+    float: left;
+}
+.gridster ul li.dashboardWidget .dashboardWidgetHeader .widgeticons {
+    padding-left: 6px;
+    padding-right: 0;
+}
+.nav-list {
+    margin: 0;
+}
+.chzn-container {
+    min-width: 77px;
+}
+.chzn-container-single .chzn-drop {
+    min-width: 100px;
+}
+.chzn-container-single .chzn-search input {
+    min-width: 64px;
+}
+.listViewEntriesDiv, .listViewEntriesDiv td {
+    overflow: hidden;
+}
+.formError .formErrorArrow {
+    margin: -2px 13px 0 0;
+}
+.connectedSortable.span6.ui-sortable {
+    float: right !important;
+}
+.ui-widget-content {
+    font-family: tahoma2 !important;
+}
+a, .muted, input[type="text"], input[type="password"], .ui-autocomplete-input, textarea, .uneditable-input {
+    color: #280000;
+}
+.pageNumbers span .pageNumbersText {
+    padding-left: 5px;
+}
+.extensionStorebtn{
+	display: none;
+}
+#Calendar_editView_fieldName_description {
+    min-height: 160px;
+}
+.dateField {
+    font-family: tahoma2;
+}
+.fc-header-right {
+    width: 28%;
+}
+.gridster ul li.dashboardWidget .dashboardWidgetHeader .dashboardTitle{
+	text-align: right;
+}
+
+.dashboardWidgetContent .pull-left {
+    float: right;
+}
+.dashboardWidgetContent .pull-right {
+    float: left;
+    padding-left: 5px;
+    padding-right: 0 !important;
+}
+.fc-event-title {
+    direction: rtl;
+    float: right;
+    text-align: right !important;
+}
+.fc-event-title .delete {
+    left: 0;
+    right: auto !important;
+}
+.label {
+    font-size: 10.4px;
+}
+#calendarview .fc-agenda {
+    direction: rtl;
+    text-align: right;
+}
+.ui-autocomplete .ui-corner-all {
+    color: #000000;
+    direction: rtl;
+}
+.fc-agenda-days .fc-col0{
+    border-left-width : 1px;
+}
+a#globalSearch {
+	display: inline-table;
+}
+.clearfix.treeView {
+    direction: ltr;
+}
+.clearfix.treeView ul, .clearfix.treeView ol {
+    margin: 0 0 9px 25px;
+}
+.ui-widget-content{
+    height: auto;
+}
+.login-form{
+    margin-top: 35px !important;
+}
+.login-form .controls{
+    margin-left: 10% !important;
+    margin-top: 15px;
+
+}
+.login-form .controls >input{
+    width: 85%;
+}
+#backButton{
+    float: right;
+    margin-right: 40px;
+}
+/*new */
+.gridster ul li .widgetChartContainer {
+	direction: ltr;
+}
+.gridster ul .widgetChartContainer {
+   float: left;
+}
+.commonActionsContainer .dropdown-menu.dropdownStyles.commonActionsButtonDropDown {
+right: -371px !important; }
+
+.select2-offscreen {
+    right: -10000px;
+}
