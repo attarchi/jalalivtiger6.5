@@ -722,8 +722,12 @@ function get_tickets_list($input_array) {
 		$contactquery = "SELECT contactid, accountid FROM vtiger_contactdetails " .
 			" INNER JOIN vtiger_crmentity ON vtiger_crmentity.crmid = vtiger_contactdetails.contactid" .
 			" AND vtiger_crmentity.deleted = 0 " .
-			" WHERE (accountid = (SELECT accountid FROM vtiger_contactdetails WHERE contactid = ?)  AND accountid != 0) OR contactid = ?";
-		$contactres = $adb->pquery($contactquery, array($id,$id));
+			" WHERE (accountid = (SELECT accountid FROM vtiger_contactdetails WHERE contactid = ?)  AND accountid != 0) OR contactid = ?" .
+			" OR (accountid in (SELECT accountid FROM vtiger_account WHERE parentid in (select accountid from vtiger_contactdetails where contactid = ?))  AND accountid != 0) " .
+             		" OR (accountid in (SELECT accountid FROM vtiger_account WHERE parentid in (SELECT accountid FROM vtiger_account WHERE parentid in (select accountid from vtiger_contactdetails where contactid = ?)))  AND accountid != 0)" .
+             		" OR (accountid in (SELECT accountid FROM vtiger_account WHERE parentid in (SELECT accountid FROM vtiger_account WHERE parentid in (SELECT accountid FROM vtiger_account WHERE parentid in (select accountid from vtiger_contactdetails where contactid = ?))))  AND accountid != 0)";
+
+		$contactres = $adb->pquery($contactquery, array($id,$id,$id,$id,$id));
 		$no_of_cont = $adb->num_rows($contactres);
 		for($i=0;$i<$no_of_cont;$i++)
 		{
@@ -2604,8 +2608,12 @@ function check_permission($customerid, $module, $entityid) {
 		$contactquery = "SELECT contactid, accountid FROM vtiger_contactdetails " .
 					" INNER JOIN vtiger_crmentity ON vtiger_crmentity.crmid = vtiger_contactdetails.contactid" .
 					" AND vtiger_crmentity.deleted = 0 " .
-					" WHERE (accountid = (SELECT accountid FROM vtiger_contactdetails WHERE contactid = ?) AND accountid != 0) OR contactid = ?";
-		$contactres = $adb->pquery($contactquery, array($customerid,$customerid));
+					" WHERE (accountid = (SELECT accountid FROM vtiger_contactdetails WHERE contactid = ?) AND accountid != 0) OR contactid = ?" .
+					" OR (accountid in (SELECT accountid FROM vtiger_account WHERE parentid in (select accountid from vtiger_contactdetails where contactid = ?))  AND accountid != 0) " .
+             				" OR (accountid in (SELECT accountid FROM vtiger_account WHERE parentid in (SELECT accountid FROM vtiger_account WHERE parentid in (select accountid from vtiger_contactdetails where contactid = ?)))  AND accountid != 0)" .
+             				" OR (accountid in (SELECT accountid FROM vtiger_account WHERE parentid in (SELECT accountid FROM vtiger_account WHERE parentid in (SELECT accountid FROM vtiger_account WHERE parentid in (select accountid from vtiger_contactdetails where contactid = ?)))) AND accountid != 0)";
+
+		$contactres = $adb->pquery($contactquery, array($customerid,$customerid,$customerid,$customerid,$customerid));
 		$no_of_cont = $adb->num_rows($contactres);
 		for($i=0;$i<$no_of_cont;$i++){
 			$cont_id = $adb->query_result($contactres,$i,'contactid');
